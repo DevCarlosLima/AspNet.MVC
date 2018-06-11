@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC</h1>
+    <p class="lead">O ASP.NET é uma estrutura web gratuita para criar ótimos sites e aplicativos da Web usando HTML, CSS e JavaScript.</p>
+    @Html.ActionLink("Implementação do ''CRUD''", "Index", "Usuarios", null, new { @class = "btn btn-primary btn-lg" })
+    <br />
+    <a class="btn btn-success" href="https://github.com/DevCarlosLima/CrudMVC" target="_blank">Projeto no GitHub</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Projeto</h2>
+        <p>
+            Este é um Projeto modelo, o qual foi criado com o template MVC nativo. E sua interação com o Banco de Dados é feita através da classe <a href="https://msdn.microsoft.com/pt-br/library/system.data.sqlclient.sqlcommand(v=vs.110).aspx" target="_blank">SqlCommand</a>. Ou seja, não foi utilizado Entity Framework.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Banco de Dados</h2>
+        <p>Neste Projeto não foi utilizado nenhuma ORM. O banco de dados utilizado é o Sql Server. E nele foi criado uma Stored Procedure responsável pela realização do CRUD.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Hospedagem</h2>
+        <p>O projeto foi hospedo no <a href="https://www.gearhost.com/" target="_blank">Gear Host</a>. Ele é um Cloud Hosting para aplicatções em .NET, PHP e Node.js.</p>
+    </div>
+</div>
